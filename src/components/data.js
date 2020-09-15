@@ -3,6 +3,7 @@
 //no React in this file. just straight up javascript
 
 //this is standard JSON file
+//JSON is an array of objects
 const Data = [
     {
       //key: value
