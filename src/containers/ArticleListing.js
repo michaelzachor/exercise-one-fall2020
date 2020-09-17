@@ -21,10 +21,12 @@ function ArticleListing() {
             {/* map is a specialized loop for an array */}
             {/* outputs the element at that point in the array, and if you want also the index */}
             {Data.map((article, i) => (
+                //this is inline JS
                 //for each article it runs ArticleCard
                 //and each child in the list needs a unique key
                 <ArticleCard key={i} articleData={article}/>
                 //you've set a prop for each ArticleCard, saying the articleData for that article is equal to the article itself
+                //so we're passing two props (the key value, and the article)
             ))}
             <p>Cool</p>
         </main>

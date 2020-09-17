@@ -1,38 +1,55 @@
 .App {
-  /* text-align: center; */
-}
-/* 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  margin: 0 auto; /*top and bottom margins are 0, side margins are auto. however much space is left */
+  max-width: 1080px; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App h1 {
+  font-size: 70px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.ArticleCard {
+  border: 1px solid black;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row; /*horizontally aligned*/
+  margin: 30px 0;
+  padding: 25px 30px; 
 }
 
-.App-link {
-  color: #61dafb;
+.ArticleCardImage {
+  flex-basis: 30%; /*how big is each child in the flexbox? %, px, etc */
+  padding-right: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
+.ArticleCardImage img {
+  /* each image in ArticleCardImage*/
+  width: 100%; /*width is 100% of its container div*/
+  height: auto; /*height fills in automatically*/
+}
+
+.ArticleCardText {
+  flex-basis: 70%;
+}
+
+/*
+Classes: .class
+IDs: #id // DON'T USE IDs
+HTML Element: h1, p, main, div, etc.
+
+Display values:
+  block (default) // <div>
+  inline // <a>
+  inline-block
+  none (don't display)
+  ~ more advanced ~
+  flex
+  grid
+
+CSS Box Model
+  padding: inside the container
+  margin: outside the container
+  border: the container
+
+  top right bottom left
+  or you can do:
+  padding-top, padding-right, etc.
+*/
