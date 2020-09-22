@@ -1,6 +1,6 @@
 .App {
   margin: 0 auto; /*top and bottom margins are 0, side margins are auto. however much space is left */
-  max-width: 1080px; 
+  max-width: 80%; 
 }
 
 .App h1 {
