@@ -1,6 +1,11 @@
-.App {
-  margin: 0 auto; /*top and bottom margins are 0, side margins are auto. however much space is left */
+.ArticleListingHeader {
+  margin-left: 8%
+}
+
+.ArticleListing {
+  margin: 0 auto; 
   max-width: 80%; 
+  padding: 0 25px;
 }
 
 .App h1 {
@@ -10,46 +15,54 @@
 .ArticleCard {
   border: 1px solid black;
   display: flex;
-  flex-direction: row; /*horizontally aligned*/
-  margin: 30px 0;
+  flex-direction: row; 
+  margin: 3% 8%;
   padding: 25px 30px; 
 }
 
 .ArticleCardImage {
-  flex-basis: 30%; /*how big is each child in the flexbox? %, px, etc */
-  padding-right: 30px;
+  flex-basis: 30%; 
+  margin-right: 30px;
 }
 
 .ArticleCardImage img {
-  /* each image in ArticleCardImage*/
-  width: 100%; /*width is 100% of its container div*/
-  height: auto; /*height fills in automatically*/
+  width: 100%; 
+  height: auto; 
 }
 
 .ArticleCardText {
   flex-basis: 70%;
 }
 
-/*
-Classes: .class
-IDs: #id // DON'T USE IDs
-HTML Element: h1, p, main, div, etc.
+.ArticleHeaderWrapper {
+  background-color: gray;
+  background-position: center;
+  padding-bottom: 60px;
+  padding-top: 65px;
+}
 
-Display values:
-  block (default) // <div>
-  inline // <a>
-  inline-block
-  none (don't display)
-  ~ more advanced ~
-  flex
-  grid
+.ArticleHeader {
+  margin: 0 26% 40px;
+  max-width: 800px;
+}
 
-CSS Box Model
-  padding: inside the container
-  margin: outside the container
-  border: the container
+.ArticleHeader h1 {
+  font-size: 48px;
+  margin: 0;
+}
 
-  top right bottom left
-  or you can do:
-  padding-top, padding-right, etc.
-*/
+.ArticleHeaderBlurb {
+  font-size: 20px;
+}
+
+.ArticleCardText {
+  flex-basis: 70%;
+}
+
+.ArticleCard a {
+  font-weight: bold;
+}
+
+.ArticleText {
+  margin: 2% 26%
+}
