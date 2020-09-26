@@ -1,12 +1,5 @@
-// list all the articles
-
-import React from 'react'; // this is how the page understands it's a react page
-//you're importing from the package react, this object called react
-
-//go out one folder, go into components folder, go to ArticleCard file
+import React from 'react';
 import ArticleCard from '../components/ArticleCard';
-//now import the data file cause we wanna use that JSON
-//we wanna use the keys to access the values
 import Data from '../components/data';
 
 function ArticleListing() {
